@@ -11,15 +11,15 @@ import logging
 
 from apscheduler.schedulers.background import BackgroundScheduler
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.common.ConfigUtil import ConfigUtil
-from programmingtheiot.common.IDataMessageListener import IDataMessageListener
+from src.main.python.programmingtheiot.common.ConfigUtil import ConfigUtil
+from src.main.python.programmingtheiot.common.IDataMessageListener import IDataMessageListener
 
-from programmingtheiot.cda.system.SystemCpuUtilTask import SystemCpuUtilTask
-from programmingtheiot.cda.system.SystemMemUtilTask import SystemMemUtilTask
+from src.main.python.programmingtheiot.cda.system.SystemCpuUtilTask import SystemCpuUtilTask
+from src.main.python.programmingtheiot.cda.system.SystemMemUtilTask import SystemMemUtilTask
 
-from programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
+from src.main.python.programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
 
 class SystemPerformanceManager(object):
 	"""
@@ -37,7 +37,11 @@ class SystemPerformanceManager(object):
 		pass
 	
 	def startManager(self):
+		logging.basicConfig(format = '%(asctime)s:%(module)s:%(levelname)s:%(message)s', level = logging.DEBUG)
+		logging.info("Started SystemPerformanceManager ")
 		pass
 		
 	def stopManager(self):
+		logging.basicConfig(format = '%(asctime)s:%(module)s:%(levelname)s:%(message)s', level = logging.DEBUG)
+		logging.info("Stopped SystemPerformanceManager ")
 		pass

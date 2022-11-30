@@ -10,7 +10,9 @@
 import logging
 import unittest
 
-from programmingtheiot.cda.app.ConstrainedDeviceApp import ConstrainedDeviceApp
+import src.main.python.programmingtheiot.cda.app.ConstrainedDeviceApp
+from src.main.python.programmingtheiot.cda.app import ConstrainedDeviceApp
+
 
 class ConstrainedDeviceAppTest(unittest.TestCase):
 	"""
@@ -36,8 +38,8 @@ class ConstrainedDeviceAppTest(unittest.TestCase):
 	def setUpClass(self):
 		logging.basicConfig(format = '%(asctime)s:%(module)s:%(levelname)s:%(message)s', level = logging.DEBUG)
 		logging.info("Testing ConstrainedDeviceApp class...")
-		self.cda = ConstrainedDeviceApp()
-		
+		self.cda = ConstrainedDeviceApp.ConstrainedDeviceApp()
+
 	def setUp(self):
 		pass
 

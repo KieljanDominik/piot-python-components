@@ -5,6 +5,9 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="logging" />
+          <option value="src.ConstrainedDeviceApp" />
+          <option value="src.main.python.programmingtheiot.cda.system.SystemPerformanceManager.programmingtheiot" />
+          <option value="src.main.python.programmingtheiot.data.BaseIotData.*" />
         </list>
       </option>
     </inspection_tool>
